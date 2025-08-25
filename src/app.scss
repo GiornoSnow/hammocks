@@ -1,0 +1,20 @@
+@use "common/styleVariables.scss" as v;
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  padding: 2.5rem;
+
+  background-color: v.$background-color;
+}
+
+.content {
+  max-width: v.$max-content;
+  margin: 0 auto;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
